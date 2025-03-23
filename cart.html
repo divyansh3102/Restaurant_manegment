@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link href="home.css" rel="stylesheet" type="text/css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="brand">Punjabi Taadka D!</div>
+        <div id="social">
+            <a href="home.html" id="home-link">Home</a>
+            <a href="#customers">Login</a>
+            <a href="cart.html" id="view-cart-link">View Cart</a>
+            <a href="#customers">Orders</a>
+        </div>
+    </header>
+    <div id="cart">
+        <h2>Your Cart</h2>
+        <table id="cart-items">
+            <thead>
+                <tr>
+                    <th>table no</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Cart items will be inserted here by JavaScript -->
+                 
+            </tbody>
+        </table>
+        
+        <div id="cart-total">
+            <h3>Total: $<span id="total-price">0.00</span></h3>
+            <button class="place-order" onclick="placeOrder()">Place Order</button>
+        </div>
+    </div>
+    <div id="test">
+        
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <hr>
+        <p class="footText">&copy; Punjabi Taadka D!</p>
+        <hr>
+        <div class="footdiv">
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+<script>
+    console.log("In cart.html");
+    console.log(JSON.parse(localStorage.getItem('cart')));
+</script>
+</html>

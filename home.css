@@ -1,0 +1,355 @@
+body{
+    margin:auto
+}
+a{
+    color: #ff3352; /* Example color */
+    margin: 0 1em;
+    text-decoration: none;
+}
+header{
+    height:60px;
+    /* border:5px solid green */
+    background-color: #3c2632;
+}
+
+.add-to-cart {
+    width: 135px; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #4CAF50; /* Adjust the background color as needed */
+    color: white; /* Adjust the text color as needed */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners if desired */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.add-to-cart:hover {
+    background-color: #45a049; /* Change background color on hover */
+}
+
+.place-order {
+    width: 120px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    background-color: #4CAF50; /* Adjust the background color as needed */
+    color: white; /* Adjust the text color as needed */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners if desired */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+#brand{
+    float: left;
+    font-size:30px;
+    color: #00ff95;
+    margin-left:15px;
+    margin-top:13px;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
+#cart-total {
+    text-align: right;
+    font-size: 1.5em;
+}
+
+#social{
+    float: right;
+    margin-right:15px;
+    margin-top:5px;
+}
+
+.slogo{
+    width:50px
+}
+
+/* Search Css*/
+#search{
+    height:450px;
+    /* border:10px groove gray; */
+    background-image: url('image/food-wallpaper.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100% 450px */
+}
+
+#logo{
+    height:150px;
+    width:150px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-left: 45%;
+    position: absolute;
+    font-size:90px;
+    animation: revolve 10s infinite
+}
+
+@keyframes revolve {
+    0%{
+        margin-left:2%;
+        transform: rotate(30deg);
+    }
+    25%{
+        margin-left:20%;
+        transform: rotate(90deg);
+    }
+  
+    50%{
+        margin-left:40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        margin-left:80%;
+        transform: rotate(270deg);
+    }
+    100%{
+        margin-left:80%;
+        margin-top:30%;
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#logo> span{
+    margin-top: 15%;
+    margin-left: 22%;
+    position: absolute;
+}
+
+#heading{
+    font-size: 60px;
+    margin-top: 15%;
+    margin-left: 31%;
+    position: absolute;
+    color: #bdff00d4;
+}
+
+.dropdown{
+    height:60px;
+    width:50%;
+    /* border:2px solid white; */
+    margin-top: 24%;
+    margin-left: 29%;
+    position: absolute;
+}
+
+
+select{
+    height:60px;
+    width:40%;
+    text-align: center;
+    font-size: 20px;
+}
+
+#restSelect{
+    width:59%;
+}
+
+
+/* quickcss*/
+#quickSearch{
+    /* height:600px; */
+    width:80%;
+    margin: 2%;
+    margin-left: 10%;
+    /* margin-top: 2%;
+    margin-bottom: 2%; */
+    /* border:10px double orange */
+}
+
+.quickHeading{
+    font-size:30px;
+    display: block;
+    color:#3c2632;
+    font-weight: bold;
+    margin-left: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.quickHeading:hover{
+    font-size:35px;
+}
+
+.quickSubHeading{
+    font-size:20px;
+    line-height: 2;
+    margin-left: 2%;
+    color:gray
+}
+
+.mainbox{
+    display:flex;
+    flex-wrap:wrap
+}
+
+.tileContainer{
+    height:180px;
+    width:30%;
+    /* border:2px solid gray; */
+    margin-left: 2%;
+    margin-top: 2%;
+    display:flex;
+    box-shadow: 10px 20px 5px gray;
+    animation: dance 10s infinite
+}
+
+@keyframes dance {
+    0%{
+        transform: rotate(-5deg);
+    }
+    25%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: scale(1.1)
+    }
+    50%{
+        transform: rotate(5deg);
+    }
+    75%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-5deg);
+    }
+}
+
+
+.tileComponent1{
+    width:52%
+}
+
+.tileComponent1> img{
+    height:100%;
+    width: 100%;
+}
+
+.tileComponent2{
+    width:45%;
+    margin-top: 12%;
+    margin-left: 4%;
+}
+
+.tileComponent2>a{
+    font-size: 25px;
+    color:#3c2632;
+    font-weight: bold;
+}
+
+.tileContainer:hover{
+    transform: scale(1.1);
+    /* transform: skewX(30deg); */
+    /* transform: rotate(180deg); */
+    /* transform: translate(100px, 100px) */
+
+}
+
+/* Footer*/
+footer{
+    /* height:80px; */
+    /* border:10px dashed red */
+    background-color: #3c2632;
+    color:white;
+    text-align: center;
+}
+
+.footText{
+    font-size:20px
+}
+
+.footdiv{
+    width:32%;
+    display:inline-block;
+    border-right:2px solid white;
+}
+
+.noBorder{
+    border:none
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width:1600px) {
+    body{
+        background-color: rgb(229, 160, 128);
+    }
+}
+
+@media screen and (max-width:1400px) {
+    body{
+        background-color: rgb(229, 222, 128);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        background-color: rgb(128, 229, 135);
+    }
+}
+
+
+@media screen and (max-width:1050px) {  /901px to 1051/
+    body{
+        background-color: rgb(128, 229, 229);
+    }
+    .tileContainer{
+        width: 45%
+    }
+}
+
+@media screen and (max-width:900px) {  /701px to 900/
+    body{
+        background-color: rgb(128, 163, 229);
+    }
+}
+
+
+@media screen and (max-width:700px) {  /501px to 700/
+    body{
+        background-color: rgb(240, 191, 249);
+    }
+    .tileContainer{
+        width: 90%
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    body{
+        background-color: rgb(229, 128, 128);
+    }
+    .quickHeading{
+        font-size:20px;
+    }
+}
+
+
+#coupon{
+    height:300px;
+    width:600px;
+    background-color: red;
+    position: absolute;
+    margin-top:2%;
+    margin-left: 34%;
+    z-index:100;
+    visibility: hidden;
+}

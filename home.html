@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link href="home.css" rel="stylesheet" type="text/css"/>
+        <script src="home.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="brand" class="blink">
+                Punjabi Taadka D!
+            </div>
+            <div id="social">
+                <!-- 
+                <a href="http://facebook.com">
+                    <img src="image/facebook.png" alt="fb" class="slogo"/>
+                </a>
+                <a href="http://facebook.com">
+                    <img src="image/insta.png" alt="fb" class="slogo"/>
+                </a>
+                <a href="http://facebook.com">
+                    <img src="image/youtube1.png" alt="fb" class="slogo"/>
+                </a>
+                -->
+                <a href="#customers">Login</a>
+                <a href="cart.html" id="view-cart-link">View Cart</a>
+                <a href="#customers">Orders</a>
+            </div>
+        </header>
+        <div id="search">
+            <div id="coupon">
+                <button onclick="closeCoupon()">&times;</button>
+            </div>
+            <div id="logo">
+                <span>D!</span>
+            </div>
+            <div id="heading">
+                Find Best Food Options.
+            </div>
+            <div class="dropdown">
+
+                <select id="table-select">
+                    <option value="">----TABLE SELECT----</option>
+                    <option value="101">Tno 101</option>
+                    <option value="102">Tno 102</option>
+                    <option value="103">Tno 103</option>
+                    <option value="104">Tno 104</option>
+                    <option value="105">Tno 105</option>
+                    <option value="106">Tno 106</option>
+                    <option value="107">Tno 107</option>
+                    <option value="108">Tno 108</option>
+                    <option value="109">Tno 109</option>
+                    <option value="110">Tno 110</option>
+                    
+                </select>
+                
+                <select id="veg-select">
+                    <option value="">----SELECT VEG----</option>
+                    <option value="Dal Makhani|10">Dal Makhani</option>
+                    <option value="Tandoori Roti|5">Tandoori Roti</option>
+                    <option value="Veg Kabab|12">Veg Kabab</option>
+                    <option value="Veg Mix|8">Veg Mix</option>
+                    <option value="Sahi Paneer|15">Sahi Paneer</option>
+                    <option value="Tunde Kabab|18">Tunde Kabab</option>
+                </select>
+                <select id="nonveg-select">
+                    <option value="">----SELECT NON-VEG----</option>
+                    <option value="Chicken Kabab|20">Chicken Kabab</option>
+                    <option value="Chicken Tandoori|25">Chicken Tandoori</option>
+                    <option value="Mutton Korma|30">Mutton Korma</option>
+                    <option value="Egg Curry|12">Egg Curry</option>
+                    <option value="Chicken Naan|10">Chicken Naan</option>
+                </select>
+                <button class="add-to-cart" onclick="addItemToCart()" >Add to Cart</button>
+            </div>
+        </div>
+        
+        <div id="quickSearch">
+            <span class="quickHeading">Quick Search</span>
+            <span class="quickSubHeading">Select Food By MealType</span>
+            <div class="mainbox">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="https://i.ibb.co/8rPxkWP/lunch.jpg" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <a href="#">Breakfast</a>
+                        <p>Best Deal For BreakFast</p>
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="image/sacks.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <a href="#">Lunch</a>
+                        <p>Best Deal For Lunch</p>
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="image/nightlife.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <a href="#">NightLife</a>
+                        <p>Best Deal For NightLife</p>
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="image/lunch.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <a href="#">Dinner</a>
+                        <p>Best Deal For Dinner</p>
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="image/drinks.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <a href="#">Beverages</a>
+                        <p>Best Deal For Beverages</p>
+                    </div>
+                </div>
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img src="image/dinner.png" alt="breakfast"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <a href="#">Snacks</a>
+                        <p>Best Deal For Snacks</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <footer>
+            <hr/>
+            <p class="footText">&copy; Punjabi Taadka D!</p>
+            <hr>
+            <div class="footdiv">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footdiv">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footdiv noBorder">
+                <ul>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </footer>
+        <!-- 
+        <script>
+            window.onload=onloadPage()
+        </script>
+        -->
+    </body>
+</html>
